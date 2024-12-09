@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Storage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      h2 {
+        color: #0073e6;
+        text-align: center;
+        font-size: 2rem;
+      }
+      #submitBtn {
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #submitBtn:hover {
+        background-color: #005bb5;
+      }
+      #images {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      img {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 5px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body onload="loadPosts()">
+    <h2>Google Storage API Test</h2>
+    <input type="file" name="imgfile" accept="image/jpeg" id="imgfile" />
+    <button id="submitBtn">Submit</button>
+    <div id="images"></div>
+    <script src="/submit.js"></script>
+  </body>
+</html>
